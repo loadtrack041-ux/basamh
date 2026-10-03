@@ -1,0 +1,34 @@
+import { r as createServerFn } from "./ssr.mjs";
+import { t as authMiddleware } from "./middleware-BZm1sS5r.mjs";
+import { s as createSsrRpc } from "./router-BJ8T7AVI.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/server-fns-CWYoxqTA.js
+var loadSession = createServerFn({ method: "GET" }).middleware([authMiddleware]).handler(createSsrRpc("9641d70d3398798c736c847d63a3e98e3427c7b1756af9287a20b3ada7941bb2"));
+var listDepartments = createServerFn({ method: "GET" }).middleware([authMiddleware]).handler(createSsrRpc("66619e0443601d02c07af99ef320472bcac69d28064b9766c52931aa02b9beec"));
+var listUsers = createServerFn({ method: "GET" }).middleware([authMiddleware]).validator((input = {}) => input).handler(createSsrRpc("88b837a66110baeacc8ef32a7858352c5a27d5695dab0541851b587db085a5e9"));
+var getUser = createServerFn({ method: "GET" }).middleware([authMiddleware]).validator((id) => id).handler(createSsrRpc("bf54166a906aeb0ab7772a4ca308f9b2220eb915f6f3164319ca94932f19ed4e"));
+var createUser = createServerFn({ method: "POST" }).middleware([authMiddleware]).validator((input) => input).handler(createSsrRpc("bc3187e59ede7caa8f27ab06abb7ca34d3d01df51e0117fa3fe1deda5ea13b6d"));
+var createWorker = createServerFn({ method: "POST" }).middleware([authMiddleware]).validator((input) => input).handler(createSsrRpc("380cc232ac475b4cbf83ea4ac832b5d94612ba219627dc9c0e9556ebb934d70b"));
+var getWorkerLink = createServerFn({ method: "GET" }).middleware([authMiddleware]).validator((workerUserId) => workerUserId).handler(createSsrRpc("17fa21a59cd96d396e02624f66af8539ade26a62b56d5b4f2baa6c4fb416e550"));
+var regenerateWorkerLink = createServerFn({ method: "POST" }).middleware([authMiddleware]).validator((workerUserId) => workerUserId).handler(createSsrRpc("9f9668bff5a5c6d491c2145d049dd30e06276e34c3339da204b99f3ae9867641"));
+var listAttendance = createServerFn({ method: "GET" }).middleware([authMiddleware]).validator((filters = {}) => filters).handler(createSsrRpc("a5e946f0ebdb2e82fad5b9931ca3148a9ae68801201aef7c2a045d1a95d569b7"));
+var updateUser = createServerFn({ method: "POST" }).middleware([authMiddleware]).validator((input) => input).handler(createSsrRpc("d49a0562f4b9b16af895983c11ca5b809a68956b925c85e2b273fd99756cb248"));
+var resetUserPassword = createServerFn({ method: "POST" }).middleware([authMiddleware]).validator((input) => input).handler(createSsrRpc("8dd820f555a2db34da8ccacab803137d5c9b8a3f5029e5c062f8a0c668160d94"));
+var createDepartment = createServerFn({ method: "POST" }).middleware([authMiddleware]).validator((input) => input).handler(createSsrRpc("257d2c8f0cb7ef92b48f4cd88815e6a20ea529db089f0d29112f74080e9deffb"));
+var updateDepartment = createServerFn({ method: "POST" }).middleware([authMiddleware]).validator((input) => input).handler(createSsrRpc("f72358c7e50cb5234d44ab3eb884c8907e51ab4b3ed0086f8f8ae87aed0cbace"));
+var submitOvertime = createServerFn({ method: "POST" }).middleware([authMiddleware]).validator((input) => input).handler(createSsrRpc("3980d5207ba838bd44a8bd6c4c09952ebb188c958896a20c2b484e6756cd1765"));
+var withdrawOvertime = createServerFn({ method: "POST" }).middleware([authMiddleware]).validator((id) => id).handler(createSsrRpc("b417ae523e03c77e9df6f4756ac498f53ee76fc8545a17ec050ed31fe6069606"));
+var getOvertime = createServerFn({ method: "GET" }).middleware([authMiddleware]).validator((id) => id).handler(createSsrRpc("142d5e2f0668fb9d292108a0c381aeaf546b3fd25ff213a2f8ac022aedbd1552"));
+var listOvertime = createServerFn({ method: "GET" }).middleware([authMiddleware]).validator((filters = {}) => filters).handler(createSsrRpc("237d71785371a768fdd8756a60df9fafe02f2c41bd7f1d59ca7b5430db73ecde"));
+var approveOvertime = createServerFn({ method: "POST" }).middleware([authMiddleware]).validator((input) => input).handler(createSsrRpc("3ff040bca868aa4a66de69cd25fb1e726a2fce16bcd7a428077170660ac2a53f"));
+var rejectOvertime = createServerFn({ method: "POST" }).middleware([authMiddleware]).validator((input) => input).handler(createSsrRpc("a3ff24fc2a311c3b385631171a7aad2823226a804e4e561c36a4ef799ceea108"));
+var dashboardStats = createServerFn({ method: "GET" }).middleware([authMiddleware]).validator((month) => month).handler(createSsrRpc("9c97a0af24f8a6edcda043884409ce182449f646127831319e5ceaf09a6554f4"));
+var workerSummary = createServerFn({ method: "GET" }).middleware([authMiddleware]).validator((input) => input).handler(createSsrRpc("cb41dae0140f2804087803464cb0379310dba58292a08cb5a8ed7dfcf3d26acc"));
+var listAudit = createServerFn({ method: "GET" }).middleware([authMiddleware]).handler(createSsrRpc("daceb62a608a369ee4b84660961ad75983ac172c3f78ad46883054c21ca1d51e"));
+var getSettings = createServerFn({ method: "GET" }).middleware([authMiddleware]).handler(createSsrRpc("39a6e751a14464d5cb46fafd7e81d2a50b0fcecd51bea795c6c36198bb07e0d6"));
+var updateSettings = createServerFn({ method: "POST" }).middleware([authMiddleware]).validator((input) => input).handler(createSsrRpc("40935fd2ecfb1f39d3f712f5d00d6c2f2b01ea84aedc82601d0b1ff1d49298a6"));
+var startImpersonation = createServerFn({ method: "POST" }).middleware([authMiddleware]).validator((targetUserId) => targetUserId).handler(createSsrRpc("adea2b577aa600704c46bf3ad4ed40e17b03007e19982edefcf8c53fd2668227"));
+var stopImpersonation = createServerFn({ method: "POST" }).middleware([authMiddleware]).handler(createSsrRpc("8dd53e33e6f2afa9a9209417c6ec482632487c749fff732c25c2233cb1d1185d"));
+var exportExcel = createServerFn({ method: "POST" }).middleware([authMiddleware]).validator((input) => input).handler(createSsrRpc("abc62de86ed93935db58dd0568de900ff8d45d99511b2b6278fb3cccb9cbadd5"));
+var seedDemo = createServerFn({ method: "POST" }).middleware([authMiddleware]).handler(createSsrRpc("bfb21b50695ee76c4461e679e1fa29e81df13f079b7ab06eba9a35a83a0aaf3a"));
+//#endregion
+export { submitOvertime as C, withdrawOvertime as D, updateUser as E, workerSummary as O, stopImpersonation as S, updateSettings as T, regenerateWorkerLink as _, dashboardStats as a, seedDemo as b, getSettings as c, listAttendance as d, listAudit as f, loadSession as g, listUsers as h, createWorker as i, getUser as l, listOvertime as m, createDepartment as n, exportExcel as o, listDepartments as p, createUser as r, getOvertime as s, approveOvertime as t, getWorkerLink as u, rejectOvertime as v, updateDepartment as w, startImpersonation as x, resetUserPassword as y };
